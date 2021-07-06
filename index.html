@@ -19,9 +19,11 @@ body {
   }
   var img = document.createElement("img");
   img.src = getUrl();
+  img.style.height = '600px';
+  img.style.width = '600px';
   document.body.appendChild(img);
-  document.write("<br>"+img.src);
+  document.write("<br>");
   </script>
-  <a href="get.html">get</a>
+  <button onClick="window.location.reload();">Refresh Page</button>
 </body>
 </html>
