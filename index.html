@@ -1,29 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-<title>Raccoons</title>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  font-family: Arial, Helvetica, sans-serif;
-}
-</style>
-</head>
-<body>
-<h1>Raccoons</h1>
- <script type="text/javascript">
-  function getUrl() {
-    let val = Math.floor(Math.random() * 200);
-    return `https://reopopri.sirv.com/Images/raccoon${val}.png`
-  }
-  var img = document.createElement("img");
-  img.src = getUrl();
-  img.style.height = '600px';
-  img.style.width = '600px';
-  document.body.appendChild(img);
-  document.write("<br>");
-  </script>
-  <button onClick="window.location.reload();">Refresh Page</button>
-</body>
+  <head>
+    <title>Raccoons</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+      body {
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      margin: 0;
+      display: inline-block;
+      }
+      button {
+      font-size: 24px;
+      font-family: "Comic Sans MS", "Comic Sans", cursive;
+      float: right;
+      position: relative;
+      bottom: 60px; right: 0px
+      }
+    </style>
+  </head>
+  <body>
+    <div>
+      <h1>Raccoons</h1>
+      <button onClick="window.location.reload();">new raccoon</button>
+    </div>
+    <script type="text/javascript">
+      function getUrl() {
+        let val = Math.floor(Math.random() * 200);
+        return `https://reopopri.sirv.com/Images/raccoon${val}.png`
+      }
+      var img = document.createElement("img");
+      img.src = getUrl();
+      img.style.height = '600px';
+      img.style.width = '600px';
+      document.body.appendChild(img);
+      document.write("<br>");
+    </script>
+  </body>
 </html>
